@@ -23,6 +23,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="5dp"
         android:text="আপনার জন্ম তারিখ প্রদান করুন"
+            android:layout_weight="1"
         android:background="@android:drawable/editbox_background"
         android:textStyle="bold"
         android:textColor="@color/colorBlack"
@@ -34,6 +35,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
+            android:layout_weight="2"
             android:text="এখানে ক্লিক করুন"
             android:background="@color/colorViolet"
             android:textColor="@color/colorWhite"/>
@@ -48,6 +50,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
             android:text="আপনার জন্ম তারিখ"
+            android:layout_weight="1"
             android:background="@android:drawable/editbox_background"
             android:textStyle="bold"
             android:textColor="@color/colorBlack"
@@ -58,6 +61,7 @@
             android:layout_height="match_parent"
             android:layout_alignRight="@+id/button1"
             android:layout_below="@+id/textView2"
+            android:layout_weight="2"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="10dp"
             android:textColor="@color/pink"
@@ -75,6 +79,7 @@
             android:layout_width="235dp"
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
+            android:layout_weight="1"
             android:text="গণনা করার তারিখ বাছাই করুন"
             android:background="@android:drawable/editbox_background"
             android:textStyle="bold"
@@ -87,6 +92,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="10dp"
+            android:layout_weight="2"
             android:text="এখানে ক্লিক করুন"
             android:background="@color/colorViolet"
             android:textColor="@color/colorWhite" />
@@ -101,6 +107,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="15dp"
             android:text="আপনার নির্বাচিত তারিখ"
+            android:layout_weight="1"
             android:background="@android:drawable/editbox_background"
             android:textStyle="bold"
             android:textColor="@color/colorBlack"
@@ -110,6 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignRight="@+id/button1"
+            android:layout_weight="2"
             android:layout_below="@+id/textView2"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="10dp"
@@ -139,23 +147,25 @@
         android:orientation="horizontal">
     <TextView
         android:id="@+id/text5"
-        android:layout_width="200dp"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="আপনার নির্বাচিত তারিখের বয়স"
         android:background="@android:drawable/editbox_background"
         android:textStyle="bold"
         android:textColor="@color/colorBlack"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_weight="1"/>
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         android:textColor="@color/pink"
         android:text="দিন/মাস/বছর"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_weight="3"
         />
 
 
@@ -166,18 +176,20 @@
         android:orientation="horizontal">
         <TextView
             android:id="@+id/text6"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="সিস্টেম তারিখ এবং সময় "
+            android:layout_weight="1"
             android:background="@android:drawable/editbox_background"
             android:textStyle="bold"
             android:textColor="@color/colorBlack"
             android:textSize="15sp" />
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:textColor="@color/pink"
@@ -190,17 +202,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center"
-
-        >
+        android:layout_marginTop="15dp">
         <Button
             android:id="@+id/homebtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textStyle="bold"
             android:layout_gravity="left"
+            android:layout_weight="1"
             android:textColor="@android:color/holo_orange_light"
-            android:foreground="@drawable/ic_action_name_home"
-            android:background="@color/colorPrimary"
+            android:foreground="@drawable/ic_home"
+            android:background="@android:color/transparent"
             android:onClick="home" />
 
         <Button
@@ -209,10 +221,10 @@
             android:layout_height="match_parent"
             android:layout_marginStart="130dp"
             android:textStyle="bold"
+            android:layout_weight="1"
             android:layout_gravity="right"
-            android:textColor="@android:color/holo_orange_light"
-            android:foreground="@drawable/ic_action_name_calculator"
-            android:background="@color/colorPrimary"
+            android:foreground="@drawable/ic_calculator"
+            android:background="@android:color/transparent"
             android:onClick="calculator" />
     </LinearLayout>
 
