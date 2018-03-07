@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalenderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:gravity="left"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+        android:id="@+id/text1"
+        android:layout_width="235dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:text="আপনার জন্ম তারিখ প্রদান করুন"
+        android:background="@android:drawable/editbox_background"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/birthbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="এখানে ক্লিক করুন"
+            android:background="@color/colorViolet"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:text="আপনার জন্ম তারিখ"
+            android:background="@android:drawable/editbox_background"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/button1"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/pink"
+            android:text="দিন/মাস/বছর"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:text="গণনা করার তারিখ বাছাই করুন"
+            android:background="@android:drawable/editbox_background"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/sysbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="এখানে ক্লিক করুন"
+            android:background="@color/colorViolet"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:text="আপনার নির্বাচিত তারিখ"
+            android:background="@android:drawable/editbox_background"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/systemday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/button1"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/pink"
+            android:text="দিন/মাস/বছর"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="calculation"
+        android:text="গণনা করুন"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:text="আপনার নির্বাচিত তারিখের বয়স"
+        android:background="@android:drawable/editbox_background"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/pink"
+        android:text="দিন/মাস/বছর"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="সিস্টেম তারিখ এবং সময় "
+            android:background="@android:drawable/editbox_background"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/pink"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        >
+        <Button
+            android:id="@+id/homebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textColor="@android:color/holo_orange_light"
+            android:foreground="@drawable/ic_action_name_home"
+            android:background="@color/colorPrimary"
+            android:onClick="home" />
+
+        <Button
+            android:id="@+id/calcu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="130dp"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:textColor="@android:color/holo_orange_light"
+            android:foreground="@drawable/ic_action_name_calculator"
+            android:background="@color/colorPrimary"
+            android:onClick="calculator" />
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <!--<string name="app_name">Calculator</string>-->
+    <string name="app_name">Calculator</string>
+    <string name="Calculator_activity_title">Two Input Calculator</string>
+    <string name="Calender_activity_title">Age Calculator</string>
+
+
+
+</resources>
